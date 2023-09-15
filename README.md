@@ -12,3 +12,6 @@
 
 # Pepsi Clone
 - Live Url: https://pepsi-smit-clone.netlify.app/
+
+#Otere app
+- Live Url: https://otere-app-smit.netlify.app/
