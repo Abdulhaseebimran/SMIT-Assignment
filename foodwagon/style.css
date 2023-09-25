@@ -95,6 +95,15 @@ nav {
     box-shadow: 0 0 10px rgba(255, 179, 14, 0.8);
 }
 
+.nav-right button:hover{
+    background-color: #ffb30e;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+
 /* search */
 
 .search {
@@ -104,6 +113,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     height: 600px;
+    width: 100%;
 }
 
 .search-left {
@@ -115,15 +125,17 @@ nav {
 }
 
 .search-left h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
     color: #fff;
+    text-align: center;
 }
 
 .search-left p {
     font-size: 20px;
     font-weight: 300;
     color: grey;
+    text-align: center;
 }
 
 .search-left,
@@ -205,11 +217,16 @@ nav {
     background: #f17228;
 }
 
-.search-right img {
+.search-bottom button:hover{
+    background: #991a1a;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.search-right > img {
     position: absolute;
     bottom: 0;
-    width: 600px;
-    margin-left: 20px;
 }
 
 /* flash item */
@@ -217,9 +234,10 @@ nav {
 .flash-item{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 20px;
     margin: 30px auto;
     gap: 10px;
 }
@@ -289,6 +307,7 @@ small{
 .flash-card button:hover{
     background: #f17228;
     color: #fff;
+    cursor: pointer;
 }
 
 /* work section */
@@ -330,6 +349,7 @@ small{
     font-weight: 900;
     color: black;
     padding: 10px 20px;
+    text-align: center;
 }
 
 .work-card p{
@@ -339,4 +359,344 @@ small{
     color: #918e8e;
     margin: 0 auto;
     word-wrap: wrap;
+}
+
+/* popular items */
+
+.popular-h4{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 60px auto;
+    text-align: center;
+    word-wrap: wrap;
+}
+
+.popular-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.popular-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.popular-card h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.popular-card p{
+    color: #ffb20e;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.popular-card button {
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #f17228;
+    width: 100%;
+    box-shadow: 0px 0px 5px #f17228;
+    margin-top: 10px;
+}
+
+.popular-card button:hover{
+    background: #991a1a;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    box-shadow: none;
+}
+
+/* featured cards */
+
+.feature-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 90%;
+}
+
+.feature-card{
+    width: 300px;
+    padding: 10px 0;
+}
+
+.feature-card-image{
+    position: relative;
+}
+
+.feature-card-image > img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.sale-tag{
+    width: 110px;
+    background-color: #f17228;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.sale-tag > span{
+    margin-left: 2px;
+}
+
+.fast-tag{
+    left: 130px;
+    background-color: #FFB30E;
+    width: 90px;
+}
+
+.restaurant-details{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.restaurant-details > div > img{
+    width: 50px;
+}
+
+.restaurant-details > div > h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.rating{
+    margin-top: 4px;
+}
+
+.restaurant-details > div > span{
+    color: #FFB30E;
+}
+
+.btn-tomorrow {
+    padding: 8px 16px 8px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f17228;
+    border: none;
+    border-radius: 10px;
+    background: #F1722833;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.btn-tomorrow:hover{
+    background: #991a1a;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-Now{
+    padding: 8px 16px 8px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #79B93C;
+    border: none;
+    border-radius: 10px;
+    background: #79B93C33;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.btn-Now:hover{
+    background: #79B93C;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* search food */
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px auto;
+    gap: 20px;
+}
+.search-heading{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.search-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.search-image > img{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.search-image h3{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+/* install app */
+
+.install-img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.install-img img{
+    width: 40%;
+}
+
+.install-img p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #f17228;
+    margin-right: 10px;
+}
+
+.install-container {
+    background: #feefd0;
+    padding-top: 60px;
+    background-image: url('./images/Curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.install-top {
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.live-tracking {
+    border-right: 1px solid #918e8e;
+    border-left: 1px solid #918e8e;
+    padding: 0px 40px;
+}
+
+.install-bottom{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 120px;
+    gap: 80px;
+}
+
+.install-bottom img{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.install-bottom-text p {
+    font-size: 16px;
+    color: #918e8e;
+    font-weight: 400;
+}
+
+.install-bottom-text h1 {
+    font-size: 38px;
+    line-height: 50px;
+    color: #ffa315;
+    font-weight: 700;
+}
+
+.install-bottom-btn{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.install-bottom-btn button{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 7px #ffa315;
+    padding: 10px 15px;
+}
+
+.install-bottom-btn button i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.install-bottom-btn button:hover{
+    background: #ffa315;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1150px) {
+    .search-right img {
+       overflow: hidden;
+       width: 500px;
+    }
+    .search-inp-top{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .search-bottom{
+        margin-top: 10px;
+    }
+    .search-bottom input {
+        width: 70%;
+    }
+    .search-bottom button{
+        padding: 15px 20px;
+        font-size: 12px;
+    }
+    .search-inp{
+        height: 200px;
+        padding: 30px 20px;
+    }
 }
