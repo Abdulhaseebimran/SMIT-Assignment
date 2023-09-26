@@ -145,7 +145,7 @@ nav {
 }
 
 .search-inp {
-    height: 220px;
+    height: 260px;
     background: #fff;
     border-radius: 10px;
     width: 100%;
@@ -180,10 +180,10 @@ nav {
 }
 
 .search-bottom{
-    height: 50%;
+    height: 70%;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 
