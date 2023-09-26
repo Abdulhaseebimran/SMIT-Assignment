@@ -183,6 +183,7 @@ nav {
     height: 50%;
     align-items: center;
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -239,7 +240,7 @@ nav {
     width: 100%;
     padding: 20px 20px;
     margin: 30px auto;
-    gap: 10px;
+    gap: 20px;
 }
 
 .flash-img img{
@@ -325,13 +326,14 @@ small{
     margin: 40px 0px;
 }
 
-.work-card-container {
+/* .work-card-container {
     display: flex;
-    width: 70%;
+    align-items: center;
     margin-top: 20px;
-}
+    width: 100%;
+} */
 
-.work-card-container img {
+.work-card img {
     width: 80px;
     height: 100px;
 }
@@ -342,6 +344,7 @@ small{
     flex-direction: column;
     justify-content: center;
     padding: 15px 20px;
+    width: 70%;
 }
 
 .work-card h3{
@@ -658,11 +661,14 @@ small{
     background: #fff;
     box-shadow: 0px 0px 7px #ffa315;
     padding: 10px 15px;
+    height: 50px;
 }
+
 
 .install-bottom-btn button i{
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 26px;
+    color: #f17228;
 }
 
 .install-bottom-btn button:hover{
@@ -673,13 +679,160 @@ small{
     box-shadow: none;
 }
 
+/* deals */
+
+.deals-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px auto;
+    gap: 20px;
+}
+
+.deals-card{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    margin: 40px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 350px;
+}
+
+.deals-card-left{
+    width: 30%;
+    padding: 40px;
+}
+
+.deals-card-left h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+}
+
+.deals-card-left span{
+    color: #f17228;
+}
+
+.deals-card-left p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #918e8e;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+}
+
+.deals-card-left button{
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #f17228;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.deals-card-left button:hover{
+    background: #991a1a;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.deals-card-right > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+
+.deals-card-right{
+    width: 70%;
+    height: 100%;
+}
+
+/* best deals */
+
+.best-deals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+.best-deals > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.best-deals-text{
+    position: absolute;
+    top: 60px;
+}
+
+.best-deals-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+}
+
+.best-deals-text > div > button{
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #f17228;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.best-deals-text > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.best-deals-text > div > button:hover{
+    background: #991a1a;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
 
 /* media queries */
 
 @media screen and (max-width: 1150px) {
+    .nav-center p {
+        font-size: 18px;
+    }
+    nav{
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .search-right img {
        overflow: hidden;
-       width: 500px;
+       width: 450px;
+    }
+    .search-left h1 {
+        font-size: 50px;
     }
     .search-inp-top{
         margin-bottom: 5px;
@@ -699,4 +852,254 @@ small{
         height: 200px;
         padding: 30px 20px;
     }
+    .install-img img{
+        width: 50%;
+    }
+    .install-bottom img{
+        width: 50%;
+        height: 100%;
+    }
+    .install-bottom-text h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .install-bottom-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .install-bottom-btn{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .install-bottom-btn button{
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 50%;
+    }
+    .install-bottom-btn button i{
+        font-size: 20px;
+    }
+    .deals-card-left h1{
+        font-size: 24px;
+    }
+    .deals-card-left p{
+        font-size: 14px;
+    }
+    .install-top{
+        width: 80%;
+    }
+    .install-img > img{
+        width: 50px;
+    }
+    .install-img p{
+        font-size: 16px;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .nav-center p {
+        display: none;
+    }
+    .search{
+        flex-direction: column;
+    }
+    .search-left h1 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .search-left p {
+        font-size: 16px;
+    }
+    .search-right > img{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .popular-card-container{
+        flex-direction: row;
+    }
+    .install-top {
+        width: 100%;
+    }
+    .install-bottom img{
+        width: 60%;
+        height: 100%;
+    }
+    .install-bottom-btn button{
+        width: 30%;
+        text-align: center;
+    }
+    .install-bottom-btn button i{
+        font-size: 14px;
+    }
+    .install-bottom-text h1{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .install-bottom-text p{
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .install-bottom{
+        flex-direction: column-reverse;
+    }
+    .install-bottom-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .install-top{
+        flex-direction: column;
+        width: 50%;
+    }
+    .deals-card-left h1{
+        font-size: 18px;
+    }
+    .deals-card-left p{
+        font-size: 12px;
+    }
+    .deals-card-left button{
+        font-size: 12px;
+    }
+    .deals-card-left button i{
+        display: none;
+    }
+    .best-deals-text h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .best-deals-text > div > button{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .work-section{
+        width: 100%;
+    }
+    .work-card > img{
+        width: 50px;
+        height: auto;
+    }
+    .work-card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .work-card p{
+        text-align: center;
+        font-size: 16px;
+        word-wrap: wrap;
+    }
+    .work-card h3{
+        text-align: center;
+        font-size: 18px;
+    }
+    .search-right > img{
+        margin-left: -30px;
+    }
+    .search-inp{
+        padding: 20px 20px;
+        width: 300px;
+        height: 400px;
+    }
+    .search-bottom {
+        flex-direction: row;
+    }
+    .deals-card{
+        width: 100%;
+    }
+    .deals-card-left{
+        width: 100%;
+        padding: 20px;
+    }
+    .best-deals-text{
+        top: 10px;
+    }
+    .best-deals-text h2{
+        font-size: 16px;
+        text-align: center;
+        word-wrap: wrap;
+    }
+    .best-deals-text > div > button{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .install-bottom-btn button{
+        width: 50%;
+    }
+    .install-bottom-btn button i{
+        font-size: 12px;
+    }
+    .install-top {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .deals-card-left h1{
+        font-size: 16px;
+    }
+    .deals-card-left{
+        width: 50%;
+    }
+    .search{
+        width: 100%;
+    }
+    .search-right > img{
+        width: 250px;
+    }
+    .search-left h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .search-left p {
+        font-size: 14px;
+    }
+    .nav-right p{
+        display: none;
+    }
+    .nav-right button{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .nav-right .search-box{
+        width: 100%;
+    }
+    .flash-img img{
+        width: 300px;
+    }
+    .search-right > img{
+        margin-left: -50px;
+    }
+    .install-img > img{
+        width: 50px;
+    }
+    .install-img{
+        width: 100%;
+        flex-direction: column;
+    }
+    .install-img p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .install-bottom img{
+        width: 100%;
+        height: 100%;
+    }
+    .best-deals-text > div > button{
+      display: none;
+    }
+    .best-deals-text h2{
+        font-size: 14px;
+        text-align: center;
+        word-wrap: wrap;
+    }
+
 }
