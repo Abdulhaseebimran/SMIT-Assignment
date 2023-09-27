@@ -15,3 +15,6 @@
 
 # Otere app
 - Live Url: https://otere-app-smit.netlify.app/
+  
+# Food Wagon
+- Live Url: https://foodwagon-smit.netlify.app/
