@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arapey", serif;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+}
+
+.nav-lists {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.nav-lists li:hover {
+    color: red;
+    transition: 0.5s linear ease-in-out;
+}
+
+.nav-lists .nav-btn button {
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn1,
+.btn2 {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn1 {
+    border-color: white;
+}
+
+.btn2 {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.btn2 .nav-arrow {
+    background-color: white;
+    color: #ed1c24;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* image slider */
+.main-slider {
+    background-color: black;
+}
+
+.main-slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* brands section */
+
+.brands {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.title .bold-title {
+    font-family: "Lobster Two", cursive;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.title h2 {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.brands-para {
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.other-brands {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/* .brand{
+    margin-bottom: 20px;
+} */
+
+.brand-img {
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.brand img {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.brand .order-btn {
+    width: 200px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 10px 5px;
+    margin-bottom: 40px;
+}
+
+
+.order-btn:hover {
+    background-color: red;
+    border-color: red;
+    transition: 0.5s linear ease-in-out;
+    color: white;
+}
+
+.franchise,
+.brand,
+.village {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.franchise .isl-res {
+    display: flex;
+    justify-content: space-around;
+    gap: 120px;
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.isl-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ed1c24;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.isl {
+    font-size: 25px;
+    text-align: start;
+    padding: 20px;
+}
+
+.isl>h2 {
+    margin-bottom: 15px;
+}
+
+.isl>p,
+.express-content>p {
+    font-size: 20px;
+    color: rgb(179, 174, 174);
+    margin-top: 10px;
+}
+
+.isl-salt {
+    font-family: "Lobster Two", cursive;
+}
+
+.isl-img>img {
+    height: 350px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.isl>button {
+    margin-top: 45px;
+    width: 40%;
+    gap: 40px;
+}
+
+.isl>button:hover {
+    background-color: red;
+    border-color: red;
+    transition: 0.5s linear ease-in-out;
+    color: white;
+}
+
+.express {
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+
+.express-res {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.express-img img {
+    width: 100%;
+    height: 250px;
+    background: none;
+    border-radius: 6px;
+}
+
+.express-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ed1c24;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.express-content {
+    align-items: center;
+}
+
+.express-content h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.express-content span {
+    font-family: "Lobster Two", cursive;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.express-content button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.express-content button:hover {
+    background-color: red;
+    border-color: red;
+    transition: 0.5s linear ease-in-out;
+    color: white;
+}
+
+/* village section */
+
+.village {
+    background: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.village .isl-image {
+    border-radius: 5px;
+    align-items: flex-start;
+}
+
+.village .isl-res {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.village .btn1 {
+    background: #28a745;
+    border: 1px solid #28a745;
+    width: 30%;
+}
+
+.village .nav-arrow {
+    color: white;
+}
+
+.open {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.open1 {
+    height: 250px;
+    background-color: white;
+    width: 60%;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.open1 .isl-title {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.open1 h2 {
+    font-size: 30px;
+}
+
+.open1 p {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+/* feeds */
+
+.feeds {
+    background-color: black;
+    margin-top: 100px;
+}
+
+.feeds h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.feeds-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    gap: 20px;
+    text-align: center;
+    background: none;
+    margin-bottom: 100px;
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    padding: 50px;
+}
+
+.side1 {
+    gap: 300px;
+}
+
+.side1 .logo-image{
+    width: 20%;
+    height: 80px;
+    margin-right: 200px;
+}
+
+.side1 p {
+    width: 50%;
+    word-spacing: 5px;
+    font-size: 18px;
+    color: rgb(172, 168, 168);
+    margin-top: 20px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.side1 {
+    padding-right: 100px;
+}
+
+.side-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.side1 li {
+    padding-top: 20px;
+    color: rgb(172, 168, 168);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.side-list {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.side-links {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.side1 img {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.foot-end {
+    margin-top: 60px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.foot-end h1 {
+    list-style-type: 2px solid white;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(179, 174, 174);
+}
+
+.side-gap{
+    padding-right: 200px;
+}
